@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="plug-in.js"></script>
+</head>
+<body>
+<header>
+    <div class="inner clearfix">
+        <div id="logo" class="logo">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1543929560&di=90d325451aef77836c00043e4c781671&src=http://www.ixueyi.com/GetImges/291001-294000/293168/201603111148424269.jpg" alt="头像">
+            <span class="mark">编辑</span>
+            <input id="picInput" type="file">
+        </div>
+        <label>
+            <input id="search" class="search" type="text" name="search" placeholder="在 Google 上搜索">
+            <span class="searchIcon">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-search"></use>
+                </svg>
+            </span>
+        </label>
+        <div id="google" class="google searchEngines">谷歌</div>
+        <div id="baidu" class="baidu searchEngines">百度</div>
+    </div>
+</header>
+
+<main>
+    <div id="container" class="container">
+        <div id="mask" class="mask">
+            <div id="dialog" class="dialog clearfix">
+                <h2>请输入键位<span id="pressupKeyboard"></span>所对应的网址</h2>
+                <input id="inputWebsite" type="text">
+                <span class="reminder">请您输入有效网址</span>
+                <button class="confirm">确认</button>
+                <button class="cancel">取消</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer></footer>
+
+<script src="header-search.js"></script>
+<script src="once-keyboard.js"></script>
+
+</body>
+</html>
