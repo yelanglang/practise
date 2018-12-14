@@ -1,0 +1,17 @@
+html { padding: 0; margin: 0; }
+body {font-family: 'microsoft yahei',Arial,sans-serif;padding: 0;margin: 0;font-size: 1em;}
+*{padding: 0;margin: 0;}
+a{cursor: pointer;}
+
+.content{width: 1000px;height: 409px;margin:0 auto;margin-top: 30px;position: relative;overflow: hidden;}
+.img-list{width: 6000px;height: 409px;overflow: hidden;position:absolute;top:0px;left:0px;}
+.img-list ul{width: auto;height: 409px;}
+.img-list li{list-style: none;float: left;}
+.img-list li.current{display: block;}
+#left{position: absolute;left:0;top:50%;width: 45px;height: 45px;background: url(../image/image9/l.png) no-repeat;margin-top: -23px;}
+#right{position: absolute;right:0;top:50%;width: 45px;height: 45px;background: url(../image/image9/r.png) no-repeat;margin-top: -23px;}
+a:hover{cursor: pointer;}
+.page{display: none;}
+.round{position: absolute;bottom: 10px;left:50%;margin-left: -45px;}
+.round li{list-style: none;float: left;width: 10px;height: 10px;border-radius:10px;background: #fff;margin-right: 5px;}
+.round li.current{background: #999;}

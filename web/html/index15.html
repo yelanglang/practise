@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/task15.css" rel="stylesheet">
+    <script src="../plugin/angular-1.2.16.js"></script>
+    <script src="../js/index15.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="cartController" class="container">
+        <div>
+            请输入订单编号：<input ng-model="name"><button ng-click="name=''" ng-show="name.length">清空</button>
+        </div>
+        <table class="table table-bordered table-hover">
+            <tr class="tHeader">
+                <td ng-class="{dropup:(order=='' && orderType=='id')}" ng-click="changeOrder('id')">订单编号<span class="caret"></span></td>
+                <td>商品名称</td>
+                <td ng-class="{dropup:(order=='' && orderType=='price')}" ng-click="changeOrder('price')">总价<span class="caret"></span></td>
+                <td>订单状态</td><td>订单日期</td>
+                <td>操作</td>
+            </tr>
+            <tr ng-repeat="item in data | orderBy:order + orderType | filter:name">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.status}}</td>
+                <td>{{item.date}}</td>
+                <td><button type="button" class="btn btn-danger" ng-click="delete2($index)">删除</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

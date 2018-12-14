@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>作业7效果图</title>
+		<link href="../css/task7.css" rel="stylesheet" />
+		<script type="text/javascript" src="../js/index7.js"></script>
+	</head>
+	<body>
+		<!-- 头部logo -->
+		<div class="header">
+			<div class="header-logo normal">
+				<div class="left"><img src="../image/image7/logo.png"/></div>
+				<div class="right"><a><img src="../image/image7/gxjd63090.jpg"/></a></div>
+			</div>
+		</div>
+		<!-- 头部导航栏 -->
+		<div class="menu">
+			<div class="nav normal">
+				<ul>
+					<li class="active"><a class="home">首页</a></li>
+					<li><a class="flight">国内机票</a></li>
+					<li><a class="iflight">国际机票</a></li>
+					<li><a class="hotel">酒店</a></li>
+					<li><a class="holiday">度假</a></li>
+					<li><a class="buy">团购</a></li>
+					<li><a class="attraction">景点门票</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 内容 -->
+		<div class="content">
+			<div class="content-main normal">
+				<!-- 左侧机票、酒店 -->
+				<div class="c-main-left left">
+					<div class="c-main-banner left">
+						<ul>
+							<li id="flightTab" class="active">机票<span></span></li>
+							<li id="hotelTab">酒店<span></span></li>
+						</ul>
+					</div>
+					<div class="left">
+						<!-- 机票 -->
+						<div class="c-main-flight">
+							<ul class="c-main-title-tab">
+								<li id="flightTab1" class="active">国内机票<span></span></li>
+								<li id="flightTab2">国际机票<span></span></li>
+							</ul>
+							<div class="c-main-form">
+								<form id="flightForm" class="aform">
+									<div class="item">
+										<label>出发城市</label>
+										<input type="text" tabindex="0" name="depCity" placeholder="北京/出发"/>
+									</div>
+									<div class="item">
+										<label>到达城市</label>
+										<input type="text" tabindex="1" name="arrCity" placeholder="上海/到达"/>
+									</div>
+									<div class="exchange"><!-- 切换 -->
+										<a></a>
+									</div>
+									<div class="item radio">
+										<input type="radio" id="radio1" name="type" value="1" checked="checked"><label>单程</label>
+										<input type="radio" id="radio2" name="type" value="2"><label>双程</label>
+									</div>
+									<div class="item time">
+										<label>出发时间</label>
+										<input id="depTime1" type="text" name="depTime" placeholder="2016-08-16"/>
+									</div>
+									<div class="item time">
+										<label>到达时间</label>
+										<input id="arrTime1" type="text" name="arrTime" disabled="disabled" placeholder="返回时间"/>
+									</div>
+									<div class="item submit">
+										<input type="submit" value="查询">
+									</div>
+								</form>
+								<form id="iFlightForm" class="aform" style="display: none;">
+									<div class="item">
+										<label>出发城市</label>
+										<input type="text" tabindex="2" name="depCity" placeholder="北京/出发"/>
+									</div>
+									<div class="item">
+										<label>到达城市</label>
+										<input type="text" tabindex="3" name="arrCity" placeholder="香港/到达"/>
+									</div>
+									<div class="exchange"><!-- 切换 -->
+										<a></a>
+									</div>
+									<div class="item radio">
+										<input type="radio" id="radio3" name="type" value="1" checked="checked"><label>单程</label>
+										<input type="radio" id="radio4" name="type" value="2"><label>双程</label>
+									</div>
+									<div class="item time">
+										<label>出发时间</label>
+										<input id="depTime2" type="text" name="depTime" placeholder="2016-08-16"/>
+									</div>
+									<div class="item time">
+										<label>到达时间</label>
+										<input id="arrTime2" type="text" name="arrTime" disabled="disabled" placeholder="返回时间"/>
+									</div>
+									<div class="item submit">
+										<input type="submit" value="查询">
+									</div>
+								</form>
+							</div>
+						</div>
+						<!-- 酒店 -->
+						<div class="c-main-hotel" style="display: none;">
+							<ul class="c-main-title-tab">
+								<li id="hotelTab1" class="active">国内酒店<span></span></li>
+								<li id="hotelTab2">国际酒店<span></span></li>
+							</ul>
+							<div class="c-main-form">
+								<form id="hotelForm" class="aform">
+									<div class="item hotelItem">
+										<label>入住城市</label>
+										<input tabindex="4" type="text" name="depCity" placeholder="北京"/>
+									</div>
+									<div class="item time">
+										<label>入住日期</label>
+										<input id="hotelDepTime1" type="text" name="depTime" placeholder="2016-08-16"/>
+									</div>
+									<div class="item time">
+										<label>离店日期</label>
+										<input id="hotelArrTime1" type="text" name="arrTime" placeholder="离店日期"/>
+									</div>
+									<div class="item hotelItem">
+										<label>酒店名称</label>
+										<input type="text" name="hotelName" placeholder="酒店名称"/>
+									</div>
+									<div class="item submit">
+										<input type="submit" value="查询">
+									</div>
+								</form>
+								<form id="iHotelForm" class="aform" style="display: none;">
+									<div class="i_item radio">
+										<label>酒店类型</label>
+										<input type="radio" id="radio5" name="type" value="1" checked="checked"><label>国内</label>
+										<input type="radio" id="radio6" name="type" value="2"><label>海外</label>
+									</div>
+									<div class="i_item">
+										<label>入住城市</label>
+										<input tabindex="5" type="text" name="depCity" placeholder="香港"/>
+									</div>
+									<div class="i_item">
+										<label>入住日期</label>
+										<input id="hotelDepTime2" type="text" name="arrCity" placeholder="2016-08-17"/>
+									</div>
+									<div class="i_item">
+										<label>离店日期</label>
+										<input id="hotelArrTime2" type="text" name="arrCity" placeholder="2016-08-18"/>
+									</div>
+									<div class="i_item">
+										<label>酒店名称</label>
+										<input type="text" name="arrCity" placeholder="酒店名称"/>
+									</div>
+									<div class="submit">
+										<input type="submit" value="搜索">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cityAuto" style="display: none;">
+					<div class="notice"><h3>热门城市(可直接输入城市或者城市拼音)</h3><span class="close"></span></div>
+					<div class="cityMenu">
+						<ul>
+							<li class="active">热门</li>
+							<li>A-G</li>
+							<li>H-L</li>
+							<li>M-T</li>
+							<li>W-Z</li>
+						</ul>
+					</div>
+					<div class="cityList">
+						<ul class="cityUlList">
+							<li><a>北京</a></li>
+							<li><a>北京</a></li>
+							<li><a>北京</a></li>
+							<li><a>北京</a></li>
+							<li><a>北京</a></li>
+							<li><a>北京</a></li>
+							<li><a>北京</a></li>
+							<li><a>北京</a></li>
+							<li><a>北京</a></li>
+							<li><a>北京</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--start 右侧图片轮播 -->
+				<div class="c-main-right right">
+					<div class="c-main-box">
+						<div class="bigPic">
+							<ul>
+								<li><a><img src="../image/image7/160412-605.jpg"></a></li>
+								<li style="display: none;"><a><img src="../image/image7/jp160218.png"></a></li>
+								<li style="display: none;"><a><img src="../image/image7/jp160218-2.png"></a></li>
+							</ul>
+						</div>
+						<div class="picText">
+							<ul>
+								<li><a>相约奥运</a><b></b></li>
+								<li style="display: none;"><a>机票</a><b></b></li>
+								<li style="display: none;"><a>机票</a><b></b></li>
+							</ul>
+						</div>
+						<div class="smallPic">
+							<ul>
+								<li class="current"><a><img src="../image/image7/160412-605.jpg"></a></li>
+								<li><a><img src="../image/image7/jp160218-290-1.png"></a></li>
+								<li><a><img src="../image/image7/jp160218-290-2.png"></a></li>
+							</ul>
+						</div>
+						<div class="pre"><a>‹</a></div>
+						<div class="next"><a>›</a></div>
+					</div>
+				</div>
+				<!-- end 右侧图片轮播 -->
+			</div>
+			<div class="content-center normal">
+				<!-- 左边小图片轮播 -->
+				<div id="left-btm-box" class="left left-content">
+					<div class="left-pic">
+						<ul>
+							<li><a><img src="../image/image7/160412-605.jpg"></a></li>
+							<li style="display: none;"><a><img src="../image/image7/jp160218-290-1.png"></a></li>
+							<li style="display: none;"><a><img src="../image/image7/jp160218-290-2.png"></a></li>
+						</ul>
+					</div>
+					<div class="left-round">
+						<span class="current"></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<!-- 右侧机票信息 -->
+				<div class="right right-content">
+					<!-- title 导航栏 -->
+					<div class="right-title">
+						<div class="logo left">
+							<i></i>
+							<span>特价机票</span>
+						</div>
+						<div class="sub-menu right">
+							<ul>
+								<li class="current"><span>北京</span></li>
+								<li><span>上海</span></li>
+								<li><span>广州</span></li>
+								<li><span>深圳</span></li>
+								<li><span>重庆</span></li>
+								<li><span>成都</span></li>
+								<li><span>杭州</span></li>
+								<li><span>南京</span></li>
+								<li><span>更多</span></li>
+							</ul>
+						</div>
+					</div>
+					<!-- 特价机票列表 -->
+					<div class="flight-content">
+						<div class="flight-list">
+							<ul>
+								<li><a><span class="specialTitle">北京<em class="arrows"> → </em>重庆</span><span class="date">09-14</span><span class="lowestPrice">¥<strong>850</strong></span><span class="rate">5.1 折</span></a></li>
+								<li><a><span class="specialTitle">北京<em class="arrows"> → </em>广州</span><span class="date">09-14</span><span class="lowestPrice">¥<strong>1130</strong></span><span class="rate">6.6 折</span></a></li>
+								<li><a><span class="specialTitle">北京<em class="arrows"> → </em>上海</span><span class="date">09-14</span><span class="lowestPrice">¥<strong>630</strong></span><span class="rate">5.0 折</span></a></li>
+							</ul>
+							<ul class="right-ul">
+								<li><a><span class="specialTitle">北京<em class="arrows"> → </em>重庆</span><span class="date">09-14</span><span class="lowestPrice">¥<strong>850</strong></span><span class="rate">5.1 折</span></a></li>
+								<li><a><span class="specialTitle">北京<em class="arrows"> → </em>广州</span><span class="date">09-14</span><span class="lowestPrice">¥<strong>1130</strong></span><span class="rate">6.6 折</span></a></li>
+								<li><a><span class="specialTitle">北京<em class="arrows"> → </em>上海</span><span class="date">09-14</span><span class="lowestPrice">¥<strong>630</strong></span><span class="rate">5.0 折</span></a></li>
+							</ul>
+						</div>
+						<div class="load-more"><a>查看全部北京特价机票>></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-content normal">
+				<p>本网站 <a>酒店预订</a>-<a>机票预订</a>-<a>酒店团购</a>-<a>旅游度假</a>-<a>景区门票</a> 由携程、同程等OTA提供</p>
+				<p><a>qitianle.com</a>-订机票、订酒店、度假 七天乐 www.qitianle.com ©2002-2016 上海奢佰实业有限公司 沪ICP备13002231号-26</p>
+			</div>
+		</div>
+	</body>
+</html>

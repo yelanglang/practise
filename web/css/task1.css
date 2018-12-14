@@ -1,0 +1,30 @@
+html { padding: 0; margin: 0; }
+body {font-family: 'microsoft yahei',Arial,sans-serif;padding: 0;margin: 0;font-size: 1em;}
+
+/*作业1样式*/
+.task1-menu{margin: 0 20px;}
+.task1-menu ul{width:100%;height:60px;background:url(../image/image1/carbon-fiber.jpg);-webkit-padding-start: 0px;border-bottom: 5px solid #c0c0c0;}
+.task1-menu li{width:11.11%;float: left;list-style-type: none;}
+.task1-menu li a{display:block;line-height: 60px;text-align: center;color: #D5D3D3;font-weight: bold;overflow: hidden;white-space: nowrap;}
+.task1-menu li img{width:100%;}
+.task1-menu .menu-item{background-color: #3d465e;}
+.task1-menu .menu-item-hidden{background-color: #3d465e;}
+.menu-item-hidden .menu-item{visibility:hidden;}
+.task1-menu .menu-item-buy{background-color: #f7931e;color: #fff;}
+
+/*作业2样式*/
+.task2-top{height:100px;}
+.task2-top,.task2-banner{margin: 0 auto;width:1000px;}
+.task2-top .top-logo{float:left;}
+.task2-top ul{display: inline;float:right;margin: 0px;height:100px;}
+.task2-top li,.task2-menu li{float: left;list-style-type: none;}
+.task2-top .cls126_100{width:126px;height:100px;}
+.task2-menu{height:40px;background-color: #f10180;}
+.task2-menu ul{height:40px;line-height:40px;color:#fff;font-size: 16px;-webkit-padding-start: 0px;-webkit-margin-before: 0em;-webkit-margin-after: 0em;margin: 0px;position: relative;}
+.task2-menu li a{padding:0 19px;display:block;}
+.task2-menu li a:hover{background-color: #db0a76;}
+.task2-menu li a img{vertical-align: middle;margin-right: 8px;}
+.task2-menu .temai{background-color: #db0a76;}
+.task2-menu .buying{position:absolute;right:0px;top:0px;background-color: #db0a76;}
+.task2-nav-time{text-align:center;height: 50px;line-height: 50px;font-size: 16px;}
+.task2-nav-time strong{font-size:25px;color:#c5001d;font-weight:bold;padding:0 8px;}

@@ -1,0 +1,26 @@
+html { padding: 0; margin: 0; }
+body {font-family: 'microsoft yahei',Arial,sans-serif;padding: 0;margin: 0;font-size: 1em;background-color: #fff;}
+
+*{padding: 0;margin: 0;}
+.red{color:#ff0000;}
+.red2{color:#B22222;}
+form{margin:20px auto 40px auto;width: 75%;min-width: 600px;font-size: 12px;color: #1d2d45;}
+.title{width: 100%;height:48px;color:#666;border-bottom:2px solid #e33b3d;background: url(../image/image6/jdlogo.png) no-repeat left 15px;}
+.title h3{text-align: left;margin-left: 190px;font-size: 22px;background: url(../image/image6/jdog.png) right no-repeat;height: 48px;line-height: 49px;font-weight: normal;}
+.welcome{padding: 30px 65px 15px 35px;}
+.welcome p{line-height: 25px;}
+.feedback{margin-bottom:10px;margin-top: 20px;}
+.normal{width:100%;border: 1px solid #cce8ff;}
+.normal p{background-color: #EEF6FF;text-align: left;padding: 6px 10px;border:1px solid #fff;}
+.feedback textarea,.message .info{margin:21px 34px 26px 47px;}
+.radio .satisfied{margin:10px 0 20px 47px;}
+.radio .satisfied p{background-color: #fff;padding:0;border:none;margin-bottom:5px;}
+.radio .satisfied input{margin-right:5px;}
+.message{margin-top: 40px;margin-bottom: 10px;}
+.message .help{font-size: 10px;background-color: #FFFDEE;padding-left: 1em;line-height: 24px;color: #999999;text-align: left;}
+.message .help img{margin: 0px 4px 4px 0;padding-right: 5px;vertical-align: middle;}
+.message .info span{display: inline-block;width:50px;}
+.message .info input{margin-left:20px;}
+.message .info-phone{margin-top:5px;}
+.submit p{text-align: center;padding:0;}
+.submit #submit{padding: .4em 1em;border: 1px solid #aed0ea;background: #d7ebf9 url(../image/image6/ui-bg_glass_80_d7ebf9_1x400.png) 50% 50% repeat-x;font-weight: bold;color: #0070a3;border-radius: 5px;  display: inline-block;}

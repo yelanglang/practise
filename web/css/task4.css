@@ -1,0 +1,91 @@
+html { padding: 0; margin: 0; }
+body {font-family: 'microsoft yahei',Arial,sans-serif;padding: 0;margin: 0;font-size: 1em;background-color: #fff;}
+
+ul{padding: 0;margin: 0;}
+p{padding:0;margin:0;}
+/*通用*/
+.header,.content,.footer{width: 100%;min-width: 1200px;}
+.normal{width: 1200px;margin: 0 auto;}
+.float-left{float:left;display: inline;}
+.float-right{float:right;display: inline;}
+/*头部样式*/
+.header{height: 148px;}
+.header .header-first{height: 30px;width:100%;background: url("../image/image4/header_bg.png");}
+.header .header-first .normal{height: 30px;font-size: 15px;color:#fff;line-height: 30px;}
+.header-first .login_register{margin-left: 12px;}
+.header-first .login_register a{border-bottom: 1px solid #fff;}
+.header-first .login_register .login{margin-right: 24px;}
+.header-first .language{margin-right: 12px;}
+.header .header-second{height: 118px;width: 100%;}
+.header .header-second .normal{height: 118px;}
+/*下面2行为兼容ie6修改，如若不考虑ie6，则直接使用注释下内容*/
+.header-second .logo{/* line-height: 118px; */}
+.header-second .logo img{/* vertical-align: middle; */margin-top: 18px;}
+.header-second .menu ul{margin-right: 12px;height: 24px;margin-top: 52px;float:right;display: inline;}/*display: inline;解决ie6双边距问题*/
+.header-second .menu li{float:left;display: inline;list-style: none;line-height: 24px;margin-left: 28px;font-size: 14px;color:#808080;}
+.header-second .menu li img{margin-left: 5px;vertical-align: middle;}
+.header-second .menu .home{color:#cc1a1e;}
+
+/*内容*/
+.content .content-img{position: relative;zoom:1;}
+.content .content-img img{width:100%;min-width:1200px;max-height: 528px;}
+/*ie6下问题，绝对定位必须写上left:0;ie6下透明使用filter:alpha(opacity=60) win7下好像不起作用。。。*/
+.content .content-img-bottom{width: 100%;height: 46px;background-color: #000;position: absolute;bottom: 4px;opacity: 0.6;filter:alpha(opacity=60);left:0;}
+.content .circle-div{width: 100%;position: absolute;bottom:4px;left:0;}
+.content .circle{width: 120px;height: 46px;margin: 0 auto;}
+/*ie6下不支border-radius，故改成背景图片*/
+.content .circle span{width: 18px;height: 18px;/* background-color: #efefef;border-radius:10px; */background:url("../image/image4/circle_white.png") no-repeat;float: left;margin: 15px 8px 0;}
+.content .circle .red{/* background-color: #e60012; */background:url("../image/image4/circle_red.png") no-repeat;}
+.content .focus{color:#cc1a1e;}
+.focus .focus-title{margin-top: 30px;font-size: 22px;font-weight: bold;width:1200px;height: 66px;}
+.focus .focus-title p{margin-bottom: 10px;text-align: center;}
+.focus .focus-title .float-left{width:152px;text-align: center;}
+.focus .focus-title .left-divide{float:left;display: inline;width:524px;height: 1px;margin: 0;padding-top: 16px;border-bottom:1px solid #999999;overflow: hidden;}
+.focus .focus-title .right-divide{float:right;display: inline;width:524px;height: 1px;margin: 0;padding-top: 16px;border-bottom:1px solid #999999;overflow: hidden;}
+.focus .focus-content ul{margin-top: 45px;  width: 1200px;height: 274px;}
+.focus .focus-content li{float:left;list-style: none;display: inline;width: 218px;height: 274px;}
+.focus .focus-content .left-margin{margin-left:27px;}
+/* .focus .focus-content li:nth-child(n+2){margin-left: 27px;} *//*ie6不支持*/
+.focus .focus-content li img{width: 218px;height: 218px;margin-bottom: 20px;}
+.focus .focus-content li a{display: block;}
+/*ie6下不支border-radius，故改成背景图片*/
+.focus .focus-content li span{display:block;width:136px;height: 33px;/* border: 1px solid #cc1a1e;border-radius: 25px; */background:url("../image/image4/body_word_bg.png") no-repeat;text-align: center;line-height: 33px;margin: 0 auto;font-weight: normal;}
+
+/*关于徐福记*/
+.content .content-main{width: 1200px;margin-top: 45px;height: 455px;}
+.content-main .about{width:540px;}
+.content-main .title{height: 45px;border-bottom:2px solid #e6e6e6;}
+.content-main .title p{float:left;display:inline;font-size: 19px;height: 45px;line-height: 45px;font-weight: bold;color:#cc1a1e;border-bottom:1px solid #707070;padding-right:8px;}
+.content-main .title a{float:right;font-size:12px;color:#666666;padding-top: 22px;display: inline;font-weight: bold;}
+.content-main .title a img{margin:0 3px -2px 0;}
+.content-main .vedio{margin-top: 22px;width:540px;height: 386px;}
+.content-main .vedio img{width:540px;height: 386px;}
+.content-main .dynamic{width: 540px;margin-left: 120px;}
+.content-main .dynamic .dynamic-list{margin-top: 22px;}
+/*
+	li若没有浮动，内容有浮动，li下边有间隙
+	解决方法：1：给li加上浮动属性：float:left;display: inline;
+	         2：给li设置vertical-align：top垂直对齐方式；（此处经测试没起作用）
+	经测试如若同时加上这两种情况，也无效。
+*/
+.dynamic li{list-style: none;margin-top: 16px;height: 84px;font-size: 15px;float:left;display: inline;}
+.dynamic .first-li{margin-top: 0px;}
+.dynamic li .dynamic-list-word{margin-left: 12px;}
+.dynamic li p{line-height: 22px;height: 22px;}
+.dynamic li .banner{color:#cc1a1e;}
+.dynamic li .date{color:#666666;font-size: 12px;}
+.dynamic li .more{color:#666666;}
+
+/*footer尾部*/
+.footer .footer1{margin-top: 90px;height: 236px;width: 100%;min-width: 1200px;background-color: #cc1a1e;}
+.footer1 .footer1-content{width: 1200px;}
+.footer1 .footer1-left{margin-left: 6px;font-size: 14px;color:#f0eeee;padding-top: 50px;line-height: 18px;}
+.footer1 .footer1-left .footer1-left-company{padding-bottom: 5px;color:#fff;}
+.footer1 .footer1-center{width: 2px;height: 155px;background-color: #e89a9b;margin-top: 30px;margin-left: 72px;}
+.footer1 .footer1-right{margin-top: 52px;margin-left: 82px;}
+.footer1 .footer1-right-content{margin-left: 28px;margin-top: 16px;font-size: 14px;color:#efefef;line-height: 26px;}
+.footer1 .footer1-right-content span{margin: 0 8px;}
+.footer1 .footer1-right-content .share{color:#ffffff;}
+.footer1 .footer1-right-content .share a{margin-left: 15px;}
+.footer1 .footer1-right-content .share a img{vertical-align: middle;}
+.footer .footer2{height: 45px;width: 100%;min-width: 1200px;background-color: #fff;line-height: 45px;text-align: center;font-size: 12px;color:#999999;}

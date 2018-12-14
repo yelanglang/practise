@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>作业10效果图</title>
+		<link href="../css/task10.css" rel="stylesheet" />
+		<script type="text/javascript" src="../js/common/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="../js/index10.js"></script>
+		
+	</head>
+	<body>
+		<div class="bg">
+			<div class="container">
+				<div class="header">
+					<a class="logo fLeft"></a>
+					<a class="feedback fRight">意见反馈</a>
+					<div class="lang-box">
+						<span>简体中文</span>|<a>繁體中文</a>|<a>English</a>
+					</div>
+				</div>
+				<div class="content">
+					<div class="menu fLeft">
+						<div><a class="nav-box current"><span class="dt nav_1">QQ账号</span><span class="dd">由数字组成，经典通行账号</span></a></div>
+						<div><a class="nav-box"><span class="dt nav_2">邮箱账号</span><span class="dd">用邮箱地址注册，便于记忆</span></a></div>
+						<div class="search">
+							<div class="input-box">
+								<form action="">
+									<input id="left-num" type="text" class="txt" value="输入想要的4-10位数字">
+									<input type="submit" class="btn" value="">
+								</form>
+							</div>
+							<ul>
+								<li><a class="li-birth">生日</a></li>
+								<li><a class="li-love">爱情</a></li>
+								<li><a class="li-phone">手机</a></li>
+								<li><a class="li-year">年度</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="detail fRight">
+						<a class="detail-toplink"></a>
+						<div class="detail-title"><div class="detail-subtitle">注册账号</div></div>
+						<form action="">
+							<div class="formArea">
+								<div class="box">
+									<label class="item">昵称</label>
+									<div class="input-box nick-input-box">
+										<div id="nick_bg" class="bg_txt">
+											<input type="text" class="new-text" id="nick" name="nick" maxlength="24">
+										</div>
+									</div>
+									<div class="info">
+										<div id="nick_info" class="tip">请输入昵称</div>
+									</div>
+								</div>
+								<div class="box">
+									<label class="item">密码</label>
+									<div class="input-box">
+										<div id="pwd_bg" class="bg_txt">
+											<input type="password" class="new-text" id="pwd" name="password" maxlength="16">
+										</div>
+									</div>
+									<div class="info pwd-info">
+										<div class="pwd-tips" style="display: none;">
+											<div class="default" id="pwd_tips1">长度为6-16个字符</div>
+											<div class="default" id="pwd_tips2">长度不能包含空格</div>
+											<div class="default" id="pwd_tips3">不能是9位以下纯数字</div>
+										</div>
+										<div id="pwd_result" style="display:none;">
+											<div id="pwd-pic" class="middle">中等</div>
+											<span id="pwd-info">复杂度还行，再加强一下等级？</span>
+										</div>
+									</div>
+								</div>
+								<div class="box">
+									<label class="item">确认密码</label>
+									<div class="input-box">
+										<div class="bg_txt">
+											<input id="pwd_again" type="password" class="new-text" maxlength="16">
+										</div>
+									</div>
+									<div class="info">
+										<div id="pwd_again_info" class="tip">请再次输入密码</div>
+									</div>
+								</div>
+								<div class="box box-sex">
+									<label class="item">性别</label>
+									<div class="input-box nobg sex-box">
+										<a name="male" class="sex-radio checked">男</a>
+										<a name="female" class="sex-radio unchecked">女</a>
+									</div>
+								</div>
+								<div class="box box-birth">
+									<label class="item">生日</label>
+									<div class="input-box nobg">
+										<select class="birth">
+											<option>公历</option>
+											<option>农历</option>
+										</select>
+										<select class="year">
+											<option>1996年</option>
+											<option>1995年</option>
+											<option>1994年</option>
+											<option>1993年</option>
+											<option>1992年</option>
+											<option>1991年</option>
+											<option>1990年</option>
+											<option>1989年</option>
+											<option>1988年</option>
+										</select>
+										<select class="month">
+											<option>1月</option>
+											<option>2月</option>
+											<option>3月</option>
+											<option>4月</option>
+											<option>5月</option>
+											<option>6月</option>
+											<option>7月</option>
+											<option>8月</option>
+											<option>9月</option>
+											<option>10月</option>
+											<option>11月</option>
+											<option>12月</option>
+										</select>
+										<select class="day">
+											<option>1日</option>
+											<option>2日</option>
+											<option>3日</option>
+											<option>4日</option>
+											<option>5日</option>
+											<option>6日</option>
+											<option>7日</option>
+											<option>8日</option>
+											<option>9日</option>
+											<option>10日</option>
+											<option>11日</option>
+											<option>12日</option>
+											<option>13日</option>
+										</select>
+									</div>
+								</div>
+								<div class="box box-birth">
+									<label class="item">所在地</label>
+									<div class="input-box nobg">
+										<select class="country">
+											<option>中国</option>
+											<option>阿尔及利亚</option>
+											<option>阿富汗</option>
+										</select>
+										<select class="province">
+											<option>北京</option>
+											<option>天津</option>
+											<option>河北</option>
+											<option>山西</option>
+											<option>内蒙古</option>
+											<option>辽宁</option>
+											<option>吉林</option>
+											<option>黑龙江</option>
+											<option>上海</option>
+										</select>
+										<select class="area">
+											<option>东城</option>
+											<option>西城</option>
+											<option>朝阳</option>
+											<option>丰台</option>
+											<option>石景山</option>
+											<option>海淀</option>
+											<option>门头沟</option>
+											<option>房山</option>
+											<option>顺义</option>
+										</select>
+									</div>
+								</div>
+								<div class="box">
+									<label class="item">手机号码</label>
+									<div class="input-box">
+										<div id="" class="bg_txt">
+											<input id="phone" type="text" class="new-text" maxlength="24">
+											<a class="phone_del" id="phone_del"></a>
+										</div>
+									</div>
+									<div class="info">
+										<div id="phone_info" class="error">请输入正确手机号码</div>
+									</div>
+								</div>
+								<div class="box box-phone-tip">
+									<label class="item"></label>
+									<div class="tip">
+										可通过该手机号码快速找回密码<br>
+										<span class="tip">中国大路地区以外手机号码&nbsp;<a>点击这里</a></span>
+									</div>
+								</div>
+								<div class="box box-phone-msg">
+									<label class="item"></label>
+									<div class="input-box" style="width: 180px;">
+										<div id="verima_bg" class="bg_txt">
+											<input type="text" class="new-text" maxlength="24">
+										</div>
+									</div>
+									<div class="getverima">
+										<div>
+											<span></span>
+											<span id="verimaTip">获取短信验证码</span>
+										</div>
+									</div>
+								</div>
+								<div class="box box-submit">
+									<label class="item"></label>
+									<div class="input-box">
+										<div class="submit-box" >
+											<input id="submit-btn" type="submit" value="立即注册">
+										</div>
+									</div>
+								</div>
+								<div class="box box-qzone">
+									<label class="item"></label>
+									<div class="input-box">
+										<a class="checked checka" id="qzone">同时开通QQ空间</a>
+										<div class="agree-box">
+											<a class="checked checka" id="agree">我已阅读并同意相关服务条款和隐私政策</a>
+											<div id="x-box" class="x-box "><!-- show -->
+												<div id="x-switcher" title="点击查看用户协议"></div>
+												<p>
+													<a>《QQ号码规则》</a><br>
+													<a>《QQ空间服务协议》</a><br>
+													<a>《隐私政策》</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
